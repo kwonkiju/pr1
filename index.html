@@ -3,58 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로또뽑자</title>
-    <script>
-        function setRandomNumber(random,start,end) {
-             for(var i=0; i <random.length;i++) {
-                 while(true) {
-            //랜덤하게 숫자 발생 시키자
-                 var randomNumber = parseInt((Math.random()*(end-start+1))+start);
-            //랜덤하게 발생시킨 숫자의 중복 여부체크를 위한 변수 선언   
-                   var isDuplicated = false;
-            //랜덤하게 발생시킨 숫자(randomNumber)와 배열에 저장된 값의
-            //중복 여부 체크   
-                        for(var k=0;k <=i-1;k++) {
-                             if(randomNumber==random[k]) {//중복된 경우
-                                 isDuplicated=true;
-                                 break;
-                                 }
-                        }/////////중복 체크용 for문            
-                            if(!isDuplicated) {//중복되지 않는 경우
-                                random[i]=randomNumber;
-                                 break;//while문 빠져 나가기
-                                 }            
-             
-                         }///while   
-      
-             }////////////for
-      
-    }//////////////setRandomNumber
-    var lotto =new Array(6);
-    setRandomNumber(lotto,1,45);
-    lotto.forEach(function(item){
-        console.log(item);
-    });
-    </script>
+    <title>Document</title>
 </head>
 <body>
-    <fieldset>
-        <legend>로또 발생기</legend>
-        <button onclick="showLottoNumber();">로또 발생</button>
-        <span id="lotto" style="font-size: 2em; color: red; font-style: oblique;"></span>
-    </fieldset>
-    <script>
-        var span=document.getElementById('lotto');
-        function showLottoNumber(){
-            lotto=new Array(6);
-            setRandomNumber(lotto,1,45);
-            var lottoNumber='';
-            lotto.forEach(function(item){
-                lottoNumber +=item+' &nbsp;';
-            });
-            span.innerHTML=lottoNumber;
-        }
-
-    </script>
+    안녕하세요
 </body>
 </html>
