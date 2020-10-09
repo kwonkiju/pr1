@@ -1,37 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Geolocation22_2.html</title>
 </head>
-
 <body>
+    <h2>자신의 위치를 알아보자</h2>
+    <a href="kakaomap.html">지도로 알아보자</a>
     <fieldset>
-        <legend>현재 위치를 지도에 표시하기</legend>
-        <div id="map" style="width: 500px; height: 400px; background-color: yellow;"></div>
+        <legend>Geolocation API -현재 위치</legend>
+        <button onclick="start()"> 위치 추적 시작</button>
+        <button onclick="stop()">위치 추적 정지</button>
+        <span id="display" style="color: red; font-size: 1.5em; font-weight: bold;"></span>
     </fieldset>
-
-    <fieldset>
-        <legend>주소로 위치찾기</legend>
-        <div>
-            <input id='address' type="text" />
-            <button onclick="searchByAddress()">주소명으로 지도 찾기</button>
-        </div>
-    </fieldset>
-
-    <script type="text/javascript"
-        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=cc687eb6e7836133082e4ee067adcd4f"></script>
     <script>
-        var mapContainer = document.getElementById('map'); // 지도를 표시할 div 
-        var mapOption = {
-            center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
-            level: 3 // 지도의 확대 레벨
+        console.log(window.navigator.geolocation);
+
+        var span =document.getElementById('display');
+       var watcher;
+       function start() {
+           if(navigator.geolocation){
+            span.innerHTML='Geolocation API를 지원하는 브라우저';
+
+            var options ={timeout :3000,maxinumAge:5000};
+                //현재 위치 정보 갱신시마다 위치 얻기
+            watcher =navigator.geolocation.watchPosition(successCallback,errorCallback,options);    
+           }
+       }
+
+       var stop =function(){
+           //위치정보 받기 중지
+           navigator.geolocation.clearWatch(watcher);
+       };
+        //위치정보를 얻었을때 자동으로 호출되는 콜백 함수
+        function successCallback(position){
+            var lat =position.coords.latitude;
+            var lng =position.coords.longitude;
+            span.innerHTML='위도 :'+lat+', 경도 :'+lng;
+
+        }
+
+        var errorCallback=function(error) {
+            switch(error.code){
+                case 1:span.innerHTML='허용이 거부된' ;break;
+                case 2:span.innerHTML='위치 확인 불가' ;break;
+                case 3:span.innerHTML='시간 초과' ;break;
+                default:span.innerHTML=error.message;
+            }
         };
-        var map = new kakao.maps.Map(mapContainer, mapOption);
     </script>
-
 </body>
-
 </html>
