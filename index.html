@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>연습</title>
     <style>
-        div [id='1'],[id='2'] div:first-child{
+        div [id='1'],[id='2'],[id='3'],[id='4'],[id='5'],[id='6'],[id='7'],[id='8'],[id='9'],[id='10'],[id='11'],[id='12'] div:first-child{
             background-color: blue;
             color: red;
             text-align: center;
@@ -14,20 +14,66 @@
 </head>
 <body>
     <div style="border: 1px black solid; width: 808px; height: 808px; float: left;">
-        <div id ="7" style="border: 1px black solid; width: 200px; height: 200px; float: left;">7</div>
-        <div id ="8" style="border: 1px black solid; width: 200px; height: 200px; float: left;">8</div>
-        <div id ="9" style="border: 1px black solid; width: 200px; height: 200px; float: left;">9</div>
-        <div id ="10" style="border: 1px black solid; width: 200px; height: 200px; float: right;">10</div>
-        <div id ="6" style="border: 1px black solid; width: 200px; height: 200px; float: left;">6</div>
-        <div id ="info" style="border: 1px black solid; width: 404px; height: 404px;position: absolute; left: 210px; top: 210px;">info</div>
-        <div id ="11" style="border: 1px black solid; width: 200px; height: 200px; float: right;">11</div>
-        <div id ="5" style="border: 1px black solid; width: 200px; height: 200px; clear: left; float: left;">5</div>
-        <div id ="12" style="border: 1px black solid; width: 200px; height: 200px; float: right ;">12</div>
-        <div id ="4" style="border: 1px black solid; width: 200px; height: 200px; clear: left; float: left;">4</div>
-        <div id ="3" style="border: 1px black solid; width: 200px; height: 200px; float: left ;">3</div>
+        <div id ="7" style="border: 1px black solid; width: 200px; height: 200px; float: left;">
+            <div>장사성공
+                <div id="1.7" style="position: relative; background-color: white; color: black; height: 180px; line-height: 180px;"></div>
+            </div>
+        </div>
+        <div id ="8" style="border: 1px black solid; width: 200px; height: 200px; float: left;">
+            <div>입원
+                <div id="1.8" style="position: relative; background-color: white; color: black; height: 180px; line-height: 180px;"></div>
+            </div>
+        </div>
+        <div id ="9" style="border: 1px black solid; width: 200px; height: 200px; float: left;">
+            <div>강아지 입양
+                <div id="1.9" style="position: relative; background-color: white; color: black; height: 180px; line-height: 180px;"></div>
+            </div>    
+        </div>
+        <div id ="10" style="border: 1px black solid; width: 200px; height: 200px; float: right;">
+            <div>정한이와 합숙
+                <div id="1.10" style="position: relative; background-color: white; color: black; height: 180px; line-height: 180px;"></div>
+            </div>    
+        </div>
+        <div id ="6" style="border: 1px black solid; width: 200px; height: 200px; float: left;">
+            <div>회식
+                <div id="1.6" style="position: relative; background-color: white; color: black; height: 180px; line-height: 180px;"></div>
+            </div>
+        </div>
+        <div id ="info" style="border: 1px black solid; width: 404px; height: 404px;position: absolute; left: 210px; top: 210px;">
+        
+            <button onclick="nansu()" style="margin-top: 190px; margin-left: 160px;">주사위 굴리기</button>
+        </div>
+        <div id ="11" style="border: 1px black solid; width: 200px; height: 200px; float: right;">
+            <div>노다지 발견
+                <div id="1.11" style="position: relative; background-color: white; color: black; height: 180px; line-height: 180px;"></div>
+            </div>
+        </div>
+        <div id ="5" style="border: 1px black solid; width: 200px; height: 200px; clear: left; float: left;">
+            <div>20만원 추가
+                <div id="1.5" style="position: relative; background-color: white; color: black; height: 180px; line-height: 180px;"></div>
+            </div>
+        </div>
+        <div id ="12" style="border: 1px black solid; width: 200px; height: 200px; float: right ;">
+            <div>파괴
+                <div id="1.12" style="position: relative; background-color: white; color: black; height: 180px; line-height: 180px;"></div>
+            </div>
+        </div>
+        <div id ="4" style="border: 1px black solid; width: 200px; height: 200px; clear: left; float: left;">
+            <div>
+                자연재해
+                <div id="1.4" style="position: relative; background-color: white; color: black; height: 180px; line-height: 180px;"></div>
+            </div>    
+        </div>
+        
+        <div id ="3" style="border: 1px black solid; width: 200px; height: 200px; float: left ;">
+            <div>강도
+                <div id="1.3" style="position: relative; background-color: white; color: black; height: 180px; line-height: 180px;"></div>
+            </div>
+        </div>
         <div id ="2" style="border: 1px black solid; width: 200px; height: 200px; float: left;">
             <div>10만원 추가
-                <div style="position: relative; background-color: white; color: black; height: 180px; line-height: 180px;"></div>
+                <div id="1.2" style="position: relative; background-color: white; color: black; height: 180px; line-height: 180px;"></div>
+            
             </div>    
         </div>
         <div id ="1" style="border: 1px black solid; width: 200px; height: 200px; float: left;">
@@ -36,11 +82,752 @@
                 <div id="1.1" style="position: relative; background-color: white; color: black; height: 180px; line-height: 180px;">말</div>
             </div>    
         </div>
-    
-    
+        
     </div>
+    <span style="margin-left: 360px;" id="stat"></span>
+    
     <script>
-    //d    
+    console.log(document.getElementById('1.1').innerHTML);
+    var user ={
+        MONEY :500000
+    };
+    var userStatus = document.getElementById("stat");
+    userStatus.innerHTML="재산 : "+user.MONEY;
+
+
+    function nansu(){
+        var dis =parseInt(Math.random()*6)+1;
+        //var dis =1;
+       // var dos=6;
+        console.log(dis);
+
+        userStatus = document.getElementById("stat");
+        //start에서 시작
+        if(document.getElementById('1.1').innerHTML =='말' &&dis ==1){
+            document.getElementById('1.1').innerHTML ='';
+            document.getElementById('1.2').innerHTML ='말';
+            user.MONEY +=100000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+' 길가에서 우연히 돈을 주웠습니다! +100000원 !');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.1').innerHTML =='말' &&dis ==2){
+            document.getElementById('1.1').innerHTML ='';
+            document.getElementById('1.3').innerHTML ='말';
+            user.MONEY -=50000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+' 강도에게 돈을 빼앗겼습니다 ! -50000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.1').innerHTML =='말' &&dis ==3){
+            document.getElementById('1.1').innerHTML ='';
+            document.getElementById('1.4').innerHTML ='말';
+            user.MONEY -=100000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+' 자연재해를 당했습니다 ! -100000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+        }else if(document.getElementById('1.1').innerHTML =='말' &&dis ==4){
+            document.getElementById('1.1').innerHTML ='';
+            document.getElementById('1.5').innerHTML ='말';
+            user.MONEY +=200000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'20만원이 굴러들어왔어요 ! +200000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+        }else if(document.getElementById('1.1').innerHTML =='말' &&dis ==5){
+            document.getElementById('1.1').innerHTML ='';
+            document.getElementById('1.6').innerHTML ='말';
+            user.MONEY -=100000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'강제로 회식에 끌려갔어요 ! -100000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+        }else if(document.getElementById('1.1').innerHTML =='말' &&dis ==6){
+            document.getElementById('1.1').innerHTML ='';
+            document.getElementById('1.7').innerHTML ='말';
+            user.MONEY +=400000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'장사가 대성공 했어요 ! +400000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            //10만원 추가에서 시작
+        }else if(document.getElementById('1.2').innerHTML =='말' &&dis ==1){
+            document.getElementById('1.2').innerHTML ='';
+            document.getElementById('1.3').innerHTML ='말';
+            user.MONEY -=50000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+' 강도에게 돈을 빼앗겼습니다 ! -50000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+        }else if(document.getElementById('1.2').innerHTML =='말' &&dis ==2){
+            document.getElementById('1.2').innerHTML ='';
+            document.getElementById('1.4').innerHTML ='말';
+            user.MONEY -=100000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+' 자연재해를 당했습니다 ! -100000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+        }else if(document.getElementById('1.2').innerHTML =='말' &&dis ==3){
+            document.getElementById('1.2').innerHTML ='';
+            document.getElementById('1.5').innerHTML ='말';
+            user.MONEY +=200000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'20만원이 굴러들어왔어요 ! +200000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+        }else if(document.getElementById('1.2').innerHTML =='말' &&dis ==4){
+            document.getElementById('1.2').innerHTML ='';
+            document.getElementById('1.6').innerHTML ='말';
+            user.MONEY -=100000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'강제로 회식에 끌려갔어요 ! -100000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.2').innerHTML =='말' &&dis ==5){
+            document.getElementById('1.2').innerHTML ='';
+            document.getElementById('1.7').innerHTML ='말';
+            user.MONEY +=400000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'장사가 대성공 했어요 ! +400000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.2').innerHTML =='말' &&dos ==6){
+            document.getElementById('1.2').innerHTML ='';
+            document.getElementById('1.8').innerHTML ='말';
+            user.MONEY -=200000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'심하게 다쳐 병원에 입원했어요 ! -200000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+            //강도에서 시작할때
+        }else if(document.getElementById('1.3').innerHTML =='말' &&dis ==1){
+            document.getElementById('1.3').innerHTML ='';
+            document.getElementById('1.4').innerHTML ='말';
+            user.MONEY -=100000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+' 자연재해를 당했습니다 ! -100000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.3').innerHTML =='말' &&dis ==2){
+            document.getElementById('1.3').innerHTML ='';
+            document.getElementById('1.5').innerHTML ='말';
+            user.MONEY +=200000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'20만원이 굴러들어왔어요 ! +200000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.3').innerHTML =='말' &&dis ==3){
+            document.getElementById('1.3').innerHTML ='';
+            document.getElementById('1.6').innerHTML ='말';
+            user.MONEY -=100000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'강제로 회식에 끌려갔어요 ! -100000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.3').innerHTML =='말' &&dis ==4){
+            document.getElementById('1.3').innerHTML ='';
+            document.getElementById('1.7').innerHTML ='말';
+            user.MONEY +=400000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'장사가 대성공 했어요 ! +400000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.3').innerHTML =='말' &&dis ==5){
+            document.getElementById('1.3').innerHTML ='';
+            document.getElementById('1.8').innerHTML ='말';
+            user.MONEY -=200000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'심하게 다쳐 병원에 입원했어요 ! -200000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.3').innerHTML =='말' &&dos ==6){
+            document.getElementById('1.3').innerHTML ='';
+            document.getElementById('1.9').innerHTML ='말';
+            user.MONEY +=100000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'강아지가 귀엽네요 ! +100000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+        
+        //자연재해에서 시작할때
+        }else if(document.getElementById('1.4').innerHTML =='말' &&dis ==1){
+            document.getElementById('1.4').innerHTML ='';
+            document.getElementById('1.5').innerHTML ='말';
+            user.MONEY +=200000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'20만원이 굴러들어왔어요 ! +200000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.4').innerHTML =='말' &&dis ==2){
+            document.getElementById('1.4').innerHTML ='';
+            document.getElementById('1.6').innerHTML ='말';
+            user.MONEY -=100000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'강제로 회식에 끌려갔어요 ! -100000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.4').innerHTML =='말' &&dis ==3){
+            document.getElementById('1.4').innerHTML ='';
+            document.getElementById('1.7').innerHTML ='말';
+            user.MONEY +=400000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'장사가 대성공 했어요 ! +400000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.4').innerHTML =='말' &&dis ==4){
+            document.getElementById('1.4').innerHTML ='';
+            document.getElementById('1.8').innerHTML ='말';
+            user.MONEY -=200000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'심하게 다쳐 병원에 입원했어요 ! -200000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.4').innerHTML =='말' &&dis ==5){
+            document.getElementById('1.4').innerHTML ='';
+            document.getElementById('1.9').innerHTML ='말';
+            user.MONEY +=100000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'강아지가 귀엽네요 ! +100000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.4').innerHTML =='말' &&dos ==6){
+            document.getElementById('1.4').innerHTML ='';
+            document.getElementById('1.10').innerHTML ='말';
+            user.MONEY -=500000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'정한아 옆으로좀가 좁아; -500000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+        //20만원 추가에서 시작할때
+        }else if(document.getElementById('1.5').innerHTML =='말' &&dis ==1){
+            document.getElementById('1.5').innerHTML ='';
+            document.getElementById('1.6').innerHTML ='말';
+            user.MONEY -=100000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'강제로 회식에 끌려갔어요 ! -100000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.5').innerHTML =='말' &&dis ==2){
+            document.getElementById('1.5').innerHTML ='';
+            document.getElementById('1.7').innerHTML ='말';
+            user.MONEY +=400000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'장사가 대성공 했어요 ! +400000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.5').innerHTML =='말' &&dis ==3){
+            document.getElementById('1.5').innerHTML ='';
+            document.getElementById('1.8').innerHTML ='말';
+            user.MONEY -=200000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'심하게 다쳐 병원에 입원했어요 ! -200000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.5').innerHTML =='말' &&dis ==4){
+            document.getElementById('1.5').innerHTML ='';
+            document.getElementById('1.9').innerHTML ='말';
+            user.MONEY +=100000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'강아지가 귀엽네요 ! +100000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.5').innerHTML =='말' &&dis ==5){
+            document.getElementById('1.5').innerHTML ='';
+            document.getElementById('1.10').innerHTML ='말';
+            user.MONEY -=500000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'정한아 옆으로좀가 좁아; -500000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.5').innerHTML =='말' &&dos ==6){
+            document.getElementById('1.5').innerHTML ='';
+            document.getElementById('1.11').innerHTML ='말';
+            user.MONEY +=500000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'황금으로 뒤덮인 광산을 찾았어요 ! +500000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+        //회식 에서 시작할때
+         }else if(document.getElementById('1.6').innerHTML =='말' &&dis ==1){
+            document.getElementById('1.6').innerHTML ='';
+            document.getElementById('1.7').innerHTML ='말';
+            user.MONEY +=400000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'장사가 대성공 했어요 ! +400000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.6').innerHTML =='말' &&dis ==2){
+            document.getElementById('1.6').innerHTML ='';
+            document.getElementById('1.8').innerHTML ='말';
+            user.MONEY -=200000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'심하게 다쳐 병원에 입원했어요 ! -200000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.6').innerHTML =='말' &&dis ==3){
+            document.getElementById('1.6').innerHTML ='';
+            document.getElementById('1.9').innerHTML ='말';
+            user.MONEY +=100000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'강아지가 귀엽네요 ! +100000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.6').innerHTML =='말' &&dis ==4){
+            document.getElementById('1.6').innerHTML ='';
+            document.getElementById('1.10').innerHTML ='말';
+            user.MONEY -=500000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'정한아 옆으로좀가 좁아; -500000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.6').innerHTML =='말' &&dis ==5){
+            document.getElementById('1.6').innerHTML ='';
+            document.getElementById('1.11').innerHTML ='말';
+            user.MONEY +=500000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'황금으로 뒤덮인 광산을 찾았어요 ! +500000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.6').innerHTML =='말' &&dos ==6){
+            document.getElementById('1.6').innerHTML ='';
+            document.getElementById('1.12').innerHTML ='말';
+            user.MONEY =100000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'ㅋㅋ 10만원부터 다시하셈 ㅋㅋ');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+        //장사성공 에서 시작할때
+        }else if(document.getElementById('1.7').innerHTML =='말' &&dis ==1){
+            document.getElementById('1.7').innerHTML ='';
+            document.getElementById('1.8').innerHTML ='말';
+            user.MONEY -=200000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'심하게 다쳐 병원에 입원했어요 ! -200000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.7').innerHTML =='말' &&dis ==2){
+            document.getElementById('1.7').innerHTML ='';
+            document.getElementById('1.9').innerHTML ='말';
+            user.MONEY +=100000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'강아지가 귀엽네요 ! +100000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.7').innerHTML =='말' &&dis ==3){
+            document.getElementById('1.7').innerHTML ='';
+            document.getElementById('1.10').innerHTML ='말';
+            user.MONEY -=500000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'정한아 옆으로좀가 좁아; -500000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.7').innerHTML =='말' &&dis ==4){
+            document.getElementById('1.7').innerHTML ='';
+            document.getElementById('1.11').innerHTML ='말';
+            user.MONEY +=500000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'황금으로 뒤덮인 광산을 찾았어요 ! +500000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.7').innerHTML =='말' &&dis ==5){
+            document.getElementById('1.7').innerHTML ='';
+            document.getElementById('1.12').innerHTML ='말';
+            user.MONEY =100000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'ㅋㅋ 10만원부터 다시하셈 ㅋㅋ');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.7').innerHTML =='말' &&dos ==6){
+            document.getElementById('1.7').innerHTML ='';
+            document.getElementById('1.1').innerHTML ='말';
+            user.MONEY +=100000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'한바퀴를 도셨으니 10만원을 드릴게요 ! +100000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+        //입원 에서 시작할때
+        }else if(document.getElementById('1.8').innerHTML =='말' &&dis ==1){
+            document.getElementById('1.8').innerHTML ='';
+            document.getElementById('1.9').innerHTML ='말';
+            user.MONEY +=100000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'강아지가 귀엽네요 ! +100000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.8').innerHTML =='말' &&dis ==2){
+            document.getElementById('1.8').innerHTML ='';
+            document.getElementById('1.10').innerHTML ='말';
+            user.MONEY -=500000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'정한아 옆으로좀가 좁아; -500000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.8').innerHTML =='말' &&dis ==3){
+            document.getElementById('1.8').innerHTML ='';
+            document.getElementById('1.11').innerHTML ='말';
+            user.MONEY +=500000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'황금으로 뒤덮인 광산을 찾았어요 ! +500000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.8').innerHTML =='말' &&dis ==4){
+            document.getElementById('1.8').innerHTML ='';
+            document.getElementById('1.12').innerHTML ='말';
+            user.MONEY =100000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'ㅋㅋ 10만원부터 다시하셈 ㅋㅋ');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.8').innerHTML =='말' &&dis ==5){
+            document.getElementById('1.8').innerHTML ='';
+            document.getElementById('1.1').innerHTML ='말';
+            user.MONEY +=100000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'한바퀴를 도셨으니 10만원을 드릴게요 ! +100000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.8').innerHTML =='말' &&dos ==6){
+            document.getElementById('1.8').innerHTML ='';
+            document.getElementById('1.2').innerHTML ='말';
+            user.MONEY +=200000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+' 길가에서 우연히 돈을 주웠습니다! +100000원 !');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+     //강아지 입양 에서 시작할때
+        }else if(document.getElementById('1.9').innerHTML =='말' &&dis ==1){
+            document.getElementById('1.9').innerHTML ='';
+            document.getElementById('1.10').innerHTML ='말';
+            user.MONEY -=500000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'정한아 옆으로좀가 좁아; -500000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.9').innerHTML =='말' &&dis ==2){
+            document.getElementById('1.9').innerHTML ='';
+            document.getElementById('1.11').innerHTML ='말';
+            user.MONEY +=500000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'황금으로 뒤덮인 광산을 찾았어요 ! +500000원');
+            
+        }else if(document.getElementById('1.9').innerHTML =='말' &&dis ==3){
+            document.getElementById('1.9').innerHTML ='';
+            document.getElementById('1.12').innerHTML ='말';
+            user.MONEY =100000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'ㅋㅋ 10만원부터 다시하셈 ㅋㅋ');
+            
+        }else if(document.getElementById('1.9').innerHTML =='말' &&dis ==4){
+            document.getElementById('1.9').innerHTML ='';
+            document.getElementById('1.1').innerHTML ='말';
+            user.MONEY +=100000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'한바퀴를 도셨으니 10만원을 드릴게요 ! +100000원');
+            
+        }else if(document.getElementById('1.9').innerHTML =='말' &&dis ==5){
+            document.getElementById('1.9').innerHTML ='';
+            document.getElementById('1.2').innerHTML ='말';
+            user.MONEY +=200000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+' 길가에서 우연히 돈을 주웠습니다! +100000원 !');
+            
+        }else if(document.getElementById('1.9').innerHTML =='말' &&dos ==6){
+            document.getElementById('1.9').innerHTML ='';
+            document.getElementById('1.3').innerHTML ='말';
+            user.MONEY +=50000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+' 강도에게 돈을 빼앗겼습니다 ! -50000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+        //정한이와 합숙 에서 시작할때
+        }else if(document.getElementById('1.10').innerHTML =='말' &&dis ==1){
+            document.getElementById('1.10').innerHTML ='';
+            document.getElementById('1.11').innerHTML ='말';
+            user.MONEY +=500000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'황금으로 뒤덮인 광산을 찾았어요 ! +500000원');
+            
+        }else if(document.getElementById('1.10').innerHTML =='말' &&dis ==2){
+            document.getElementById('1.10').innerHTML ='';
+            document.getElementById('1.12').innerHTML ='말';
+            user.MONEY =100000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'ㅋㅋ 10만원부터 다시하셈 ㅋㅋ');
+            
+        }else if(document.getElementById('1.10').innerHTML =='말' &&dis ==3){
+            document.getElementById('1.10').innerHTML ='';
+            document.getElementById('1.1').innerHTML ='말';
+            user.MONEY +=100000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'한바퀴를 도셨으니 10만원을 드릴게요 ! +100000원');
+            
+        }else if(document.getElementById('1.10').innerHTML =='말' &&dis ==4){
+            document.getElementById('1.10').innerHTML ='';
+            document.getElementById('1.2').innerHTML ='말';
+            user.MONEY +=200000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+' 길가에서 우연히 돈을 주웠습니다! +100000원 !');
+            
+        }else if(document.getElementById('1.10').innerHTML =='말' &&dis ==5){
+            document.getElementById('1.10').innerHTML ='';
+            document.getElementById('1.3').innerHTML ='말';
+            user.MONEY +=50000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+' 강도에게 돈을 빼앗겼습니다 ! -50000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.10').innerHTML =='말' &&dos ==6){
+            document.getElementById('1.10').innerHTML ='';
+            document.getElementById('1.4').innerHTML ='말';
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+' 자연재해를 당했습니다 ! -100000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+        //노다지 발견 에서 시작할때
+        }else if(document.getElementById('1.11').innerHTML =='말' &&dis ==1){
+            document.getElementById('1.11').innerHTML ='';
+            document.getElementById('1.12').innerHTML ='말';
+            user.MONEY =100000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'ㅋㅋ 10만원부터 다시하셈 ㅋㅋ');
+            
+        }else if(document.getElementById('1.11').innerHTML =='말' &&dis ==2){
+            document.getElementById('1.11').innerHTML ='';
+            document.getElementById('1.1').innerHTML ='말';
+            user.MONEY +=100000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'한바퀴를 도셨으니 10만원을 드릴게요 ! +100000원');
+            
+        }else if(document.getElementById('1.11').innerHTML =='말' &&dis ==3){
+            document.getElementById('1.11').innerHTML ='';
+            document.getElementById('1.2').innerHTML ='말';
+            user.MONEY +=200000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+' 길가에서 우연히 돈을 주웠습니다! +100000원 !');
+            
+        }else if(document.getElementById('1.11').innerHTML =='말' &&dis ==4){
+            document.getElementById('1.11').innerHTML ='';
+            document.getElementById('1.3').innerHTML ='말';
+            user.MONEY +=50000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+' 강도에게 돈을 빼앗겼습니다 ! -50000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.11').innerHTML =='말' &&dis ==5){
+            document.getElementById('1.11').innerHTML ='';
+            document.getElementById('1.4').innerHTML ='말';
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+' 자연재해를 당했습니다 ! -100000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.11').innerHTML =='말' &&dos ==6){
+            document.getElementById('1.11').innerHTML ='';
+            document.getElementById('1.5').innerHTML ='말';
+            user.MONEY +=300000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'20만원이 굴러들어왔어요 ! +200000원');
+        //파괴 에서 시작할때
+        }else if(document.getElementById('1.12').innerHTML =='말' &&dis ==1){
+            document.getElementById('1.12').innerHTML ='';
+            document.getElementById('1.1').innerHTML ='말';
+            user.MONEY +=100000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'한바퀴를 도셨으니 10만원을 드릴게요 ! +100000원');
+            
+        }else if(document.getElementById('1.12').innerHTML =='말' &&dis ==2){
+            document.getElementById('1.12').innerHTML ='';
+            document.getElementById('1.2').innerHTML ='말';
+            user.MONEY +=200000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+' 길가에서 우연히 돈을 주웠습니다! +100000원 !');
+            
+        }else if(document.getElementById('1.12').innerHTML =='말' &&dis ==3){
+            document.getElementById('1.12').innerHTML ='';
+            document.getElementById('1.3').innerHTML ='말';
+            user.MONEY +=50000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+' 강도에게 돈을 빼앗겼습니다 ! -50000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.12').innerHTML =='말' &&dis ==4){
+            document.getElementById('1.12').innerHTML ='';
+            document.getElementById('1.4').innerHTML ='말';
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+' 자연재해를 당했습니다 ! -100000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+            
+        }else if(document.getElementById('1.12').innerHTML =='말' &&dis ==5){
+            document.getElementById('1.12').innerHTML ='';
+            document.getElementById('1.5').innerHTML ='말';
+            user.MONEY +=300000;
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'20만원이 굴러들어왔어요 ! +200000원');
+            
+        }else if(document.getElementById('1.12').innerHTML =='말' &&dos ==6){
+            document.getElementById('1.12').innerHTML ='';
+            document.getElementById('1.6').innerHTML ='말';
+            userStatus.innerHTML="재산 : "+user.MONEY;
+            alert('나온숫자 :'+dis+'\r\n'+'강제로 회식에 끌려갔어요 ! -100000원');
+            if(user.MONEY<0){
+                alert('GAME OVER');
+                self.close();
+            } 
+        }
+    }
     </script>
 </body>
 </html>
