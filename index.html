@@ -1,54 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geolocation22_2.html</title>
+    <title>연습</title>
+    <style>
+        div [id='1'],[id='2'] div:first-child{
+            background-color: blue;
+            color: red;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h2>자신의 위치를 알아보자</h2>
-    <a href="kakaomap.html">지도로 알아보자</a>
-    <fieldset>
-        <legend>Geolocation API -현재 위치</legend>
-        <button onclick="start()"> 위치 추적 시작</button>
-        <button onclick="stop()">위치 추적 정지</button>
-        <span id="display" style="color: red; font-size: 1.5em; font-weight: bold;"></span>
-    </fieldset>
+    <div style="border: 1px black solid; width: 808px; height: 808px; float: left;">
+        <div id ="7" style="border: 1px black solid; width: 200px; height: 200px; float: left;">7</div>
+        <div id ="8" style="border: 1px black solid; width: 200px; height: 200px; float: left;">8</div>
+        <div id ="9" style="border: 1px black solid; width: 200px; height: 200px; float: left;">9</div>
+        <div id ="10" style="border: 1px black solid; width: 200px; height: 200px; float: right;">10</div>
+        <div id ="6" style="border: 1px black solid; width: 200px; height: 200px; float: left;">6</div>
+        <div id ="info" style="border: 1px black solid; width: 404px; height: 404px;position: absolute; left: 210px; top: 210px;">info</div>
+        <div id ="11" style="border: 1px black solid; width: 200px; height: 200px; float: right;">11</div>
+        <div id ="5" style="border: 1px black solid; width: 200px; height: 200px; clear: left; float: left;">5</div>
+        <div id ="12" style="border: 1px black solid; width: 200px; height: 200px; float: right ;">12</div>
+        <div id ="4" style="border: 1px black solid; width: 200px; height: 200px; clear: left; float: left;">4</div>
+        <div id ="3" style="border: 1px black solid; width: 200px; height: 200px; float: left ;">3</div>
+        <div id ="2" style="border: 1px black solid; width: 200px; height: 200px; float: left;">
+            <div>10만원 추가
+                <div style="position: relative; background-color: white; color: black; height: 180px; line-height: 180px;"></div>
+            </div>    
+        </div>
+        <div id ="1" style="border: 1px black solid; width: 200px; height: 200px; float: left;">
+            <div>
+                start
+                <div id="1.1" style="position: relative; background-color: white; color: black; height: 180px; line-height: 180px;">말</div>
+            </div>    
+        </div>
+    
+    
+    </div>
     <script>
-        console.log(window.navigator.geolocation);
-
-        var span =document.getElementById('display');
-       var watcher;
-       function start() {
-           if(navigator.geolocation){
-            span.innerHTML='Geolocation API를 지원하는 브라우저';
-
-            var options ={timeout :3000,maxinumAge:5000};
-                //현재 위치 정보 갱신시마다 위치 얻기
-            watcher =navigator.geolocation.watchPosition(successCallback,errorCallback,options);    
-           }
-       }
-
-       var stop =function(){
-           //위치정보 받기 중지
-           navigator.geolocation.clearWatch(watcher);
-       };
-        //위치정보를 얻었을때 자동으로 호출되는 콜백 함수
-        function successCallback(position){
-            var lat =position.coords.latitude;
-            var lng =position.coords.longitude;
-            span.innerHTML='위도 :'+lat+', 경도 :'+lng;
-
-        }
-
-        var errorCallback=function(error) {
-            switch(error.code){
-                case 1:span.innerHTML='허용이 거부된' ;break;
-                case 2:span.innerHTML='위치 확인 불가' ;break;
-                case 3:span.innerHTML='시간 초과' ;break;
-                default:span.innerHTML=error.message;
-            }
-        };
+        
     </script>
 </body>
 </html>
