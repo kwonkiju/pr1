@@ -41,7 +41,7 @@
         </div>
         <div id ="info" style="border: 1px black solid; width: 404px; height: 404px;position: absolute; left: 210px; top: 210px;">
         
-            <button onclick="nansu()" style="margin-top: 190px; margin-left: 160px;">주사위 굴리기</button>
+            <button onclick="nansu()" style="margin-top: 195px; margin-left: 160px;">주사위 굴리기</button>
         </div>
         <div id ="11" style="border: 1px black solid; width: 200px; height: 200px; float: right;">
             <div>노다지 발견
@@ -84,11 +84,11 @@
         </div>
         
     </div>
-    <span style="margin-left: 360px;" id="stat"></span>
+    <span  id="stat"></span>
     
     <script>
          window.addEventListener('load',function(){
-            alert('인생게임 ver1.0\r\n자산이 -가되면 GAME OVER 입니다')
+            alert('인생게임 ver1.0\r\n자산이 -가되면 GAME OVER , 500만원 이상 모으면 승리입니다.')
          });
     console.log(document.getElementById('1.1').innerHTML);
     var user ={
@@ -112,8 +112,8 @@
             user.MONEY +=100000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+' 길가에서 우연히 돈을 주웠습니다! +100000원 !');
-            if(user.MONEY<0){
-                alert('GAME OVER');
+            if(user.MONEY>5000000){
+                alert('You Win');
                 self.close();
             } 
             
@@ -144,8 +144,8 @@
             user.MONEY +=200000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+'20만원이 굴러들어왔어요 ! +200000원');
-            if(user.MONEY<0){
-                alert('GAME OVER');
+            if(user.MONEY>5000000){
+                alert('You Win');
                 self.close();
             } 
         }else if(document.getElementById('1.1').innerHTML =='말' &&dis ==5){
@@ -164,8 +164,8 @@
             user.MONEY +=400000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+'장사가 대성공 했어요 ! +400000원');
-            if(user.MONEY<0){
-                alert('GAME OVER');
+            if(user.MONEY>5000000){
+                alert('You Win');
                 self.close();
             } 
             //10만원 추가에서 시작
@@ -195,8 +195,8 @@
             user.MONEY +=200000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+'20만원이 굴러들어왔어요 ! +200000원');
-            if(user.MONEY<0){
-                alert('GAME OVER');
+            if(user.MONEY>5000000){
+                alert('You Win');
                 self.close();
             } 
         }else if(document.getElementById('1.2').innerHTML =='말' &&dis ==4){
@@ -216,8 +216,8 @@
             user.MONEY +=400000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+'장사가 대성공 했어요 ! +400000원');
-            if(user.MONEY<0){
-                alert('GAME OVER');
+            if(user.MONEY>5000000){
+                alert('You Win');
                 self.close();
             } 
             
@@ -250,8 +250,8 @@
             user.MONEY +=200000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+'20만원이 굴러들어왔어요 ! +200000원');
-            if(user.MONEY<0){
-                alert('GAME OVER');
+            if(user.MONEY>5000000){
+                alert('You Win');
                 self.close();
             } 
             
@@ -272,8 +272,8 @@
             user.MONEY +=400000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+'장사가 대성공 했어요 ! +400000원');
-            if(user.MONEY<0){
-                alert('GAME OVER');
+            if(user.MONEY>5000000){
+                alert('You Win');
                 self.close();
             } 
             
@@ -294,8 +294,8 @@
             user.MONEY +=100000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+'강아지가 귀엽네요 ! +100000원');
-            if(user.MONEY<0){
-                alert('GAME OVER');
+            if(user.MONEY>5000000){
+                alert('You Win');
                 self.close();
             } 
         
@@ -306,8 +306,8 @@
             user.MONEY +=200000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+'20만원이 굴러들어왔어요 ! +200000원');
-            if(user.MONEY<0){
-                alert('GAME OVER');
+            if(user.MONEY>5000000){
+                alert('You Win');
                 self.close();
             } 
             
@@ -328,8 +328,8 @@
             user.MONEY +=400000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+'장사가 대성공 했어요 ! +400000원');
-            if(user.MONEY<0){
-                alert('GAME OVER');
+            if(user.MONEY>5000000){
+                alert('You Win');
                 self.close();
             } 
             
@@ -350,8 +350,8 @@
             user.MONEY +=100000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+'강아지가 귀엽네요 ! +100000원');
-            if(user.MONEY<0){
-                alert('GAME OVER');
+            if(user.MONEY>5000000){
+                alert('You Win');
                 self.close();
             } 
             
@@ -383,8 +383,8 @@
             user.MONEY +=400000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+'장사가 대성공 했어요 ! +400000원');
-            if(user.MONEY<0){
-                alert('GAME OVER');
+            if(user.MONEY>5000000){
+                alert('You Win');
                 self.close();
             } 
             
@@ -405,8 +405,8 @@
             user.MONEY +=100000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+'강아지가 귀엽네요 ! +100000원');
-            if(user.MONEY<0){
-                alert('GAME OVER');
+            if(user.MONEY>5000000){
+                alert('You Win');
                 self.close();
             } 
             
@@ -427,8 +427,8 @@
             user.MONEY +=500000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+'황금으로 뒤덮인 광산을 찾았어요 ! +500000원');
-            if(user.MONEY<0){
-                alert('GAME OVER');
+            if(user.MONEY>5000000){
+                alert('You Win');
                 self.close();
             } 
         //회식 에서 시작할때
@@ -438,8 +438,8 @@
             user.MONEY +=400000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+'장사가 대성공 했어요 ! +400000원');
-            if(user.MONEY<0){
-                alert('GAME OVER');
+            if(user.MONEY>5000000){
+                alert('You Win');
                 self.close();
             } 
             
@@ -460,8 +460,8 @@
             user.MONEY +=100000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+'강아지가 귀엽네요 ! +100000원');
-            if(user.MONEY<0){
-                alert('GAME OVER');
+            if(user.MONEY>5000000){
+                alert('You Win');
                 self.close();
             } 
             
@@ -482,8 +482,8 @@
             user.MONEY +=500000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+'황금으로 뒤덮인 광산을 찾았어요 ! +500000원');
-            if(user.MONEY<0){
-                alert('GAME OVER');
+            if(user.MONEY>5000000){
+                alert('You Win');
                 self.close();
             } 
             
@@ -515,8 +515,8 @@
             user.MONEY +=100000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+'강아지가 귀엽네요 ! +100000원');
-            if(user.MONEY<0){
-                alert('GAME OVER');
+            if(user.MONEY>5000000){
+                alert('You Win');
                 self.close();
             } 
             
@@ -537,8 +537,8 @@
             user.MONEY +=500000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+'황금으로 뒤덮인 광산을 찾았어요 ! +500000원');
-            if(user.MONEY<0){
-                alert('GAME OVER');
+            if(user.MONEY>5000000){
+                alert('You Win');
                 self.close();
             } 
             
@@ -559,8 +559,8 @@
             user.MONEY +=100000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+'한바퀴를 도셨으니 10만원을 드릴게요 ! +100000원');
-            if(user.MONEY<0){
-                alert('GAME OVER');
+            if(user.MONEY>5000000){
+                alert('You Win');
                 self.close();
             } 
         //입원 에서 시작할때
@@ -570,8 +570,8 @@
             user.MONEY +=100000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+'강아지가 귀엽네요 ! +100000원');
-            if(user.MONEY<0){
-                alert('GAME OVER');
+            if(user.MONEY>5000000){
+                alert('You Win');
                 self.close();
             } 
             
@@ -592,8 +592,8 @@
             user.MONEY +=500000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+'황금으로 뒤덮인 광산을 찾았어요 ! +500000원');
-            if(user.MONEY<0){
-                alert('GAME OVER');
+            if(user.MONEY>5000000){
+                alert('You Win');
                 self.close();
             } 
             
@@ -614,8 +614,8 @@
             user.MONEY +=100000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+'한바퀴를 도셨으니 10만원을 드릴게요 ! +100000원');
-            if(user.MONEY<0){
-                alert('GAME OVER');
+            if(user.MONEY>5000000){
+                alert('You Win');
                 self.close();
             } 
             
@@ -625,8 +625,8 @@
             user.MONEY +=200000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+' 길가에서 우연히 돈을 주웠습니다! +100000원 !');
-            if(user.MONEY<0){
-                alert('GAME OVER');
+            if(user.MONEY>5000000){
+                alert('You Win');
                 self.close();
             } 
      //강아지 입양 에서 시작할때
@@ -647,6 +647,10 @@
             user.MONEY +=500000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+'황금으로 뒤덮인 광산을 찾았어요 ! +500000원');
+            if(user.MONEY>5000000){
+                alert('You Win');
+                self.close();
+            } 
             
         }else if(document.getElementById('1.9').innerHTML =='말' &&dis ==3){
             document.getElementById('1.9').innerHTML ='';
@@ -661,6 +665,10 @@
             user.MONEY +=100000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+'한바퀴를 도셨으니 10만원을 드릴게요 ! +100000원');
+            if(user.MONEY>5000000){
+                alert('You Win');
+                self.close();
+            } 
             
         }else if(document.getElementById('1.9').innerHTML =='말' &&dis ==5){
             document.getElementById('1.9').innerHTML ='';
@@ -668,6 +676,10 @@
             user.MONEY +=200000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+' 길가에서 우연히 돈을 주웠습니다! +100000원 !');
+            if(user.MONEY>5000000){
+                alert('You Win');
+                self.close();
+            } 
             
         }else if(document.getElementById('1.9').innerHTML =='말' &&dos ==6){
             document.getElementById('1.9').innerHTML ='';
@@ -686,6 +698,10 @@
             user.MONEY +=500000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+'황금으로 뒤덮인 광산을 찾았어요 ! +500000원');
+            if(user.MONEY>5000000){
+                alert('You Win');
+                self.close();
+            } 
             
         }else if(document.getElementById('1.10').innerHTML =='말' &&dis ==2){
             document.getElementById('1.10').innerHTML ='';
@@ -700,6 +716,10 @@
             user.MONEY +=100000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+'한바퀴를 도셨으니 10만원을 드릴게요 ! +100000원');
+            if(user.MONEY>5000000){
+                alert('You Win');
+                self.close();
+            } 
             
         }else if(document.getElementById('1.10').innerHTML =='말' &&dis ==4){
             document.getElementById('1.10').innerHTML ='';
@@ -707,6 +727,10 @@
             user.MONEY +=200000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+' 길가에서 우연히 돈을 주웠습니다! +100000원 !');
+            if(user.MONEY>5000000){
+                alert('You Win');
+                self.close();
+            } 
             
         }else if(document.getElementById('1.10').innerHTML =='말' &&dis ==5){
             document.getElementById('1.10').innerHTML ='';
@@ -743,6 +767,10 @@
             user.MONEY +=100000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+'한바퀴를 도셨으니 10만원을 드릴게요 ! +100000원');
+            if(user.MONEY>5000000){
+                alert('You Win');
+                self.close();
+            } 
             
         }else if(document.getElementById('1.11').innerHTML =='말' &&dis ==3){
             document.getElementById('1.11').innerHTML ='';
@@ -750,6 +778,10 @@
             user.MONEY +=200000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+' 길가에서 우연히 돈을 주웠습니다! +100000원 !');
+            if(user.MONEY>5000000){
+                alert('You Win');
+                self.close();
+            } 
             
         }else if(document.getElementById('1.11').innerHTML =='말' &&dis ==4){
             document.getElementById('1.11').innerHTML ='';
@@ -779,6 +811,10 @@
             user.MONEY +=300000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+'20만원이 굴러들어왔어요 ! +200000원');
+            if(user.MONEY>5000000){
+                alert('You Win');
+                self.close();
+            } 
         //파괴 에서 시작할때
         }else if(document.getElementById('1.12').innerHTML =='말' &&dis ==1){
             document.getElementById('1.12').innerHTML ='';
@@ -786,6 +822,10 @@
             user.MONEY +=100000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+'한바퀴를 도셨으니 10만원을 드릴게요 ! +100000원');
+            if(user.MONEY>5000000){
+                alert('You Win');
+                self.close();
+            } 
             
         }else if(document.getElementById('1.12').innerHTML =='말' &&dis ==2){
             document.getElementById('1.12').innerHTML ='';
@@ -793,6 +833,10 @@
             user.MONEY +=200000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+' 길가에서 우연히 돈을 주웠습니다! +100000원 !');
+            if(user.MONEY>5000000){
+                alert('You Win');
+                self.close();
+            } 
             
         }else if(document.getElementById('1.12').innerHTML =='말' &&dis ==3){
             document.getElementById('1.12').innerHTML ='';
@@ -822,6 +866,10 @@
             user.MONEY +=300000;
             userStatus.innerHTML="재산 : "+user.MONEY;
             alert('나온숫자 :'+dis+'\r\n'+'20만원이 굴러들어왔어요 ! +200000원');
+            if(user.MONEY>5000000){
+                alert('You Win');
+                self.close();
+            } 
             
         }else if(document.getElementById('1.12').innerHTML =='말' &&dos ==6){
             document.getElementById('1.12').innerHTML ='';
